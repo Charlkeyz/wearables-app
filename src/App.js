@@ -2,15 +2,12 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./pages/homepage/home";
 import Navbar from "./components/navbar/navbar";
 import SignInAndSignUpPage from "./pages/Sign-Form page/sign-in-and-sign-up";
+import Shop from "./pages/shop page/shop";
 
 
 
 
-const Shop = () => {
-  return(
-    <div>This is my shop page</div>
-  )
-};
+
 
 const App = () => {
   return(

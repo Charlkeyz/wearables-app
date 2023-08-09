@@ -4,10 +4,14 @@ import './navbar.scss'
 import { useContext } from "react";
 import { UserContext } from "../../context/user context/Usercontext";
 import { signOutUser } from "../../API's/firebase/firebase";
+import CartIcon from "../crown-icon/crown-icon";
+import CartDropdown from "../cart-dropdown/cart-dropdown";
+import { CartContext } from "../../context/cart context/Cart-context";
 
 
 const Navbar = () => {
     const {currentUser} = useContext(UserContext)
+    const {isCartOpen} = useContext(CartContext)
 
     
         
@@ -28,7 +32,9 @@ const Navbar = () => {
                     SIGN IN
                 </Link>)
                 }
+                <CartIcon/>
             </div>
+            {isCartOpen && <CartDropdown/>}
         </div>
     )
 };
