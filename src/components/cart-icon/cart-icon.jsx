@@ -1,4 +1,4 @@
-import './crown-icon.scss'
+import './cart-icon.scss'
 import { useContext } from 'react'
 
 import { ReactComponent as ShoppingIcon } from '../../assets/cart-icon.svg'
