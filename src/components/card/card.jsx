@@ -5,7 +5,9 @@ const CardItems = ({card}) => {
     const {imageUrl, title, route} = card;
     const navigate = useNavigate();
 
-    const onNavigateHandler = navigate(route);
+    const onNavigateHandler = () => {
+        navigate(route);
+    };
     return(
         <CardItemContainer onClick={onNavigateHandler}>
             <BackgroundImage
